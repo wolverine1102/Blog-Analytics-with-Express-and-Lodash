@@ -8,3 +8,13 @@ curl --request GET \
   --url https://intent-kit-16.hasura.app/api/rest/blogs \
   --header 'x-hasura-admin-secret: 32qR4KmXOIpsGPQKMqEJHGJS27G5s7HdSKO3gdtQd2kv5e852SiYwWNfxkZOBuQ6'
 ```
+
+
+**STEPS :**
+```bash
+docker build --tag blog-analytics .
+```
+```bash
+docker run -d -p 7050:7050 blog-analytics
+```
+
